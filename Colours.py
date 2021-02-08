@@ -20,9 +20,9 @@ def check():
 		incorrect_label["text"] = f"""Incorrect, the color was
 {color}"""
 	
-	num1 = random.randint(1, 21)
+	num1 = random.randint(1, 22)
 	color = colors[num1]
-	num2 = random.randint(1, 21)
+	num2 = random.randint(1, 22)
 	color_name = colors[num2]
 	color_label["text"] = color_name
 	color_label["fg"] = color
@@ -51,7 +51,8 @@ colors = {
 18 : "orchid",
 19 : "azure",
 20 : "teal",
-21 : "chocolate"
+21 : "chocolate",
+22 : "aqua"
 }
 
 #creating the layout
@@ -85,9 +86,9 @@ incorrect_label.place(relx=0.5, rely=0.37, anchor=CENTER)
 #implementing the logic
 def main():
 	global num1, num2, color, color_name
-	num1 = random.randint(1, 21)
+	num1 = random.randint(1, 22)
 	color = colors[num1]
-	num2 = random.randint(1, 21)
+	num2 = random.randint(1, 22)
 	color_name = colors[num2]
 	color_label["text"] = color_name
 	color_label["fg"] = color
